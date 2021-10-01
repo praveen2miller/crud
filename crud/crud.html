@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="crud.css">
+</head>
+
+<body style="background-color: #777;">
+    <table>
+        <tr>
+            <td>
+                <!--HTML form for crud operation-->
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">name</label>
+                        <input type="text" name="name" id="Name" >
+                    </div>
+                    <div>
+                        <label for="age">age</label>
+                        <input type="number" name="age" id="age" >
+                    </div>
+                    <div>
+                        <label >hobbies</label>
+                        <select name="hobbies" id="hobbies" required>
+                        	<option></option>
+  				<option value="dance">dance</option>
+  				<option value="sing">sing</option>
+  				<option value="play">play</option>
+  
+			</select>
+                    </div>
+                    <div>
+                        <label for="gender">gender</label><br><br>
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="female">female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                    
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+            <div class="scroll">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>age</th>
+                            <th>Hobbies</th>
+                            <th>gender</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./crud.js"></script>
+</body>
+
+</html>
+
