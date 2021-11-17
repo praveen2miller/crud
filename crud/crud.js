@@ -1,7 +1,7 @@
 var selectedRow = null;
 
 function onFormSubmit(e){
-    event.preventDefault();
+    var event.preventDefault();
     var formData = readFormData();
     if(validate(formData))
     {
