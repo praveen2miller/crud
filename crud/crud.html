@@ -15,7 +15,7 @@
         <tr>
             <th scope="col">
                 <!--HTML form for crud operation-->
-                <form autocomplete="off" onsubmit="onFormSubmit()">
+                <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
                     <div>
                         <label for="name">name</label>
                         <input type="text" name="name" id="Name" required>
