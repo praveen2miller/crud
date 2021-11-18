@@ -1,6 +1,6 @@
 var selectedRow = null;
 
-function onFormSubmit(e){
+function onFormSubmit(){
     var formData = readFormData();
     if(validate(formData))
     {
